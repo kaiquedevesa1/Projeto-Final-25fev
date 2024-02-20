@@ -25,13 +25,15 @@
     <link rel="stylesheet" href="css/body.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/media.css" />
 
     <title>Você fullturist fitness</title>
   </head>
   <body>
     <header>
       <nav class="top-menu">
-        <img src="img/logo.png" alt="logo você fitness" />
+        <div><img src="img/logo.png" alt="logo você fitness" /></div>
         <ul class="menu">
           <li class="menu-item ativo"><a href="#">Início</a></li>
           <li class="menu-item"><a href="#">Modalidades</a></li>
@@ -188,42 +190,66 @@
       </section>
     </main>
 
-    <footer>
-      <article>
-        <h1>Menu</h1>
+    <footer class="container-dark">
+      <article class="list-footer">
+        <div class="title-footer"><i class="fa-solid fa-globe"></i>Menu</div>
         <ul>
-          <li>Página inicial</li>
-          <li>Modalidades</li>
-          <li>Galeria de fotos</li>
-          <li>Contato</li>
+          <li><a href="#">Página inicial</a></li>
+          <li><a href="#">Modalidades</a></li>
+          <li><a href="#">Galeria de fotos</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </article>
 
-      <article>
-        <h1>Redes sociais</h1>
+      <article class="list-footer">
+        <div class="title-footer">
+          <i class="fa-solid fa-share-nodes"></i>Rede socias
+        </div>
         <ul>
-          <li>/suaAcademia</li>
-          <li>/suaAcademia</li>
-          <li>/suaAcademia</li>
-          <li>/suaAcademia</li>
+          <li>
+            <i class="fa-brands fa-facebook"></i><a href="#">/suaAcademia</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-square-instagram"></i
+            ><a href="#">/suaAcademia</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-twitter"></i><a href="#">/suaAcademia</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-pinterest"></i><a href="#">/suaAcademia</a>
+          </li>
         </ul>
       </article>
 
-      <article>
-        <h1>Atendimento</h1>
+      <article class="list-footer">
+        <div class="title-footer">
+          <i class="fa-solid fa-comment-dots"></i>Atendimento
+        </div>
         <ul>
-          <li>contato@seusite.com.br</li>
-          <li>21 90000-0000</li>
-          <li>21 90000-0000</li>
+          <li><a href="#">contato@seusite.com.br</a></li>
+          <li><a href="#">21 90000-0000</a></li>
+          <li><a href="#">21 90000-0000</a></li>
         </ul>
       </article>
 
-      <article>
-        <h1>Newsletter</h1>
-        <form>
-          <input type="text" placeholder="Nome" />
-          <input type="email" placeholder="E-mail" />
-          <button>Enviar</button>
+      <article class="list-footer">
+        <div class="title-footer">
+          <i class="fa-solid fa-envelope"></i>Newsletter
+        </div>
+        <form class="my-form">
+          <input
+            class="effect-line"
+            type="text"
+            aria-label="nome usuário"
+            placeholder="Nome"
+          />
+          <input
+            class="effect-line"
+            aria-label="email usuário"
+            placeholder="E-mail"
+          />
+          <button class="btn-enviar">Enviar</button>
         </form>
       </article>
     </footer>
